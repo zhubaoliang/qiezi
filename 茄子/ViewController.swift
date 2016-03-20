@@ -9,15 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    let TabView:Main = Main()
+    let Dra:Draw = Draw.init()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("Hiddenbar"), name: "hidden", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("ShowBar"), name: "Show", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("push:"), name: "push", object: nil)
+       self.view.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(Dra.view)
+        self.view.addSubview(TabView.view)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func push(noti:NSNotification)
+    {
+        let vc:AnyObject = noti.object!
+        self.navigationController?.pushViewController(vc as! UIViewController, animated: true)
+        
+    }
+    
+    func Hiddenbar()
+    {
+        print("hidden")
+        self.navigationController?.navigationBarHidden = true
+    }
+    
+    func ShowBar()
+    {
+        print("show")
+        self.navigationController?.navigationBarHidden = false
     }
 
 

@@ -14,6 +14,26 @@
 		237E60941C9C2CFB00EFD7D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237E60921C9C2CFB00EFD7D2 /* LaunchScreen.storyboard */; };
 		237E609F1C9C2CFB00EFD7D2 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E609E1C9C2CFB00EFD7D2 /* __Tests.swift */; };
 		237E60AA1C9C2CFC00EFD7D2 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60A91C9C2CFC00EFD7D2 /* __UITests.swift */; };
+		237E60B91C9C2DAB00EFD7D2 /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60B81C9C2DAB00EFD7D2 /* Draw.swift */; };
+		237E60BC1C9C2E7000EFD7D2 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60BB1C9C2E7000EFD7D2 /* Main.swift */; };
+		237E60C31C9C2F8000EFD7D2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60BE1C9C2F8000EFD7D2 /* Activity.swift */; };
+		237E60C51C9C2F8000EFD7D2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C01C9C2F8000EFD7D2 /* Message.swift */; };
+		237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C11C9C2F8000EFD7D2 /* Mine.swift */; };
+		237E60C71C9C2F8000EFD7D2 /* Mypai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C21C9C2F8000EFD7D2 /* Mypai.swift */; };
+		237E60CC1C9C327600EFD7D2 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 237E60CB1C9C327600EFD7D2 /* default.png */; };
+		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
+		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
+		23B89B3F1C9E8CA30002635B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home.swift */; };
+		23B89B461C9E8D540002635B /* Graduate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B421C9E8D540002635B /* Graduate.swift */; };
+		23B89B471C9E8D540002635B /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B431C9E8D540002635B /* School.swift */; };
+		23B89B481C9E8D540002635B /* Snow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B441C9E8D540002635B /* Snow.swift */; };
+		23B89B491C9E8D540002635B /* Streetphoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B451C9E8D540002635B /* Streetphoto.swift */; };
+		23B89B4B1C9E901F0002635B /* All.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B4A1C9E901F0002635B /* All.swift */; };
+		23B89B4E1C9E91B40002635B /* user.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23B89B4D1C9E91B40002635B /* user.jpg */; };
+		23B89B551C9E92900002635B /* SetNavgationbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B541C9E92900002635B /* SetNavgationbar.swift */; };
+		23B89B5C1C9EB7040002635B /* ForgetPassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B591C9EB7040002635B /* ForgetPassWordView.swift */; };
+		23B89B5D1C9EB7040002635B /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5A1C9EB7040002635B /* login.swift */; };
+		23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5B1C9EB7040002635B /* SetNewPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +67,26 @@
 		237E60A51C9C2CFB00EFD7D2 /* 茄子UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "茄子UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		237E60A91C9C2CFC00EFD7D2 /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
 		237E60AB1C9C2CFC00EFD7D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237E60B81C9C2DAB00EFD7D2 /* Draw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		237E60BB1C9C2E7000EFD7D2 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		237E60BE1C9C2F8000EFD7D2 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = tabitem/Activity.swift; sourceTree = SOURCE_ROOT; };
+		237E60C01C9C2F8000EFD7D2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = tabitem/Message.swift; sourceTree = SOURCE_ROOT; };
+		237E60C11C9C2F8000EFD7D2 /* Mine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mine.swift; path = tabitem/Mine.swift; sourceTree = SOURCE_ROOT; };
+		237E60C21C9C2F8000EFD7D2 /* Mypai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mypai.swift; path = tabitem/Mypai.swift; sourceTree = SOURCE_ROOT; };
+		237E60CB1C9C327600EFD7D2 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = Image/default.png; sourceTree = SOURCE_ROOT; };
+		23B89B351C9E85280002635B /* UIGestureForMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureForMain.swift; sourceTree = "<group>"; };
+		23B89B3C1C9E87C20002635B /* CreatTabitems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatTabitems.swift; sourceTree = "<group>"; };
+		23B89B3E1C9E8CA30002635B /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		23B89B421C9E8D540002635B /* Graduate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Graduate.swift; path = Scrollview/Graduate.swift; sourceTree = "<group>"; };
+		23B89B431C9E8D540002635B /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = School.swift; path = Scrollview/School.swift; sourceTree = "<group>"; };
+		23B89B441C9E8D540002635B /* Snow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Snow.swift; path = Scrollview/Snow.swift; sourceTree = "<group>"; };
+		23B89B451C9E8D540002635B /* Streetphoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Streetphoto.swift; path = Scrollview/Streetphoto.swift; sourceTree = "<group>"; };
+		23B89B4A1C9E901F0002635B /* All.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = All.swift; sourceTree = "<group>"; };
+		23B89B4D1C9E91B40002635B /* user.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = user.jpg; path = Image/user.jpg; sourceTree = SOURCE_ROOT; };
+		23B89B541C9E92900002635B /* SetNavgationbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetNavgationbar.swift; sourceTree = "<group>"; };
+		23B89B591C9EB7040002635B /* ForgetPassWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPassWordView.swift; path = login/ForgetPassWordView.swift; sourceTree = "<group>"; };
+		23B89B5A1C9EB7040002635B /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = login.swift; path = login/login.swift; sourceTree = "<group>"; };
+		23B89B5B1C9EB7040002635B /* SetNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetNewPassword.swift; path = login/SetNewPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +137,11 @@
 		237E60881C9C2CFB00EFD7D2 /* 茄子 */ = {
 			isa = PBXGroup;
 			children = (
-				237E60891C9C2CFB00EFD7D2 /* AppDelegate.swift */,
-				237E608B1C9C2CFB00EFD7D2 /* ViewController.swift */,
-				237E608D1C9C2CFB00EFD7D2 /* Main.storyboard */,
-				237E60901C9C2CFB00EFD7D2 /* Assets.xcassets */,
-				237E60921C9C2CFB00EFD7D2 /* LaunchScreen.storyboard */,
-				237E60951C9C2CFB00EFD7D2 /* Info.plist */,
+				23B89B581C9EB6F10002635B /* Login */,
+				237E60C81C9C325A00EFD7D2 /* Image */,
+				237E60BD1C9C2EF800EFD7D2 /* TabItem */,
+				237E60B71C9C2D8F00EFD7D2 /* Draw */,
+				237E60BA1C9C2DD200EFD7D2 /* Main */,
 			);
 			path = "茄子";
 			sourceTree = "<group>";
@@ -123,6 +162,131 @@
 				237E60AB1C9C2CFC00EFD7D2 /* Info.plist */,
 			);
 			path = "茄子UITests";
+			sourceTree = "<group>";
+		};
+		237E60B71C9C2D8F00EFD7D2 /* Draw */ = {
+			isa = PBXGroup;
+			children = (
+				237E60B81C9C2DAB00EFD7D2 /* Draw.swift */,
+			);
+			name = Draw;
+			sourceTree = "<group>";
+		};
+		237E60BA1C9C2DD200EFD7D2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B391C9E86F10002635B /* Othersupport */,
+				23B89B371C9E86C20002635B /* MainView */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		237E60BD1C9C2EF800EFD7D2 /* TabItem */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B531C9E921A0002635B /* Mypai */,
+				23B89B511C9E92040002635B /* Mine */,
+				23B89B501C9E91F80002635B /* Message */,
+				23B89B4F1C9E91E20002635B /* Activity */,
+				23B89B4C1C9E904C0002635B /* Home */,
+			);
+			name = TabItem;
+			sourceTree = "<group>";
+		};
+		237E60C81C9C325A00EFD7D2 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B4D1C9E91B40002635B /* user.jpg */,
+				237E60CB1C9C327600EFD7D2 /* default.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		23B89B371C9E86C20002635B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B351C9E85280002635B /* UIGestureForMain.swift */,
+				237E60BB1C9C2E7000EFD7D2 /* Main.swift */,
+				23B89B3C1C9E87C20002635B /* CreatTabitems.swift */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		23B89B391C9E86F10002635B /* Othersupport */ = {
+			isa = PBXGroup;
+			children = (
+				237E60891C9C2CFB00EFD7D2 /* AppDelegate.swift */,
+				237E608B1C9C2CFB00EFD7D2 /* ViewController.swift */,
+				237E608D1C9C2CFB00EFD7D2 /* Main.storyboard */,
+				237E60901C9C2CFB00EFD7D2 /* Assets.xcassets */,
+				237E60921C9C2CFB00EFD7D2 /* LaunchScreen.storyboard */,
+				237E60951C9C2CFB00EFD7D2 /* Info.plist */,
+			);
+			name = Othersupport;
+			sourceTree = "<group>";
+		};
+		23B89B411C9E8D340002635B /* Scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B421C9E8D540002635B /* Graduate.swift */,
+				23B89B431C9E8D540002635B /* School.swift */,
+				23B89B441C9E8D540002635B /* Snow.swift */,
+				23B89B451C9E8D540002635B /* Streetphoto.swift */,
+				23B89B4A1C9E901F0002635B /* All.swift */,
+			);
+			name = Scrollview;
+			sourceTree = "<group>";
+		};
+		23B89B4C1C9E904C0002635B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B3E1C9E8CA30002635B /* Home.swift */,
+				23B89B541C9E92900002635B /* SetNavgationbar.swift */,
+				23B89B411C9E8D340002635B /* Scrollview */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		23B89B4F1C9E91E20002635B /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				237E60BE1C9C2F8000EFD7D2 /* Activity.swift */,
+			);
+			name = Activity;
+			sourceTree = "<group>";
+		};
+		23B89B501C9E91F80002635B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				237E60C01C9C2F8000EFD7D2 /* Message.swift */,
+			);
+			name = Message;
+			sourceTree = "<group>";
+		};
+		23B89B511C9E92040002635B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				237E60C11C9C2F8000EFD7D2 /* Mine.swift */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
+		23B89B531C9E921A0002635B /* Mypai */ = {
+			isa = PBXGroup;
+			children = (
+				237E60C21C9C2F8000EFD7D2 /* Mypai.swift */,
+			);
+			name = Mypai;
+			sourceTree = "<group>";
+		};
+		23B89B581C9EB6F10002635B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B591C9EB7040002635B /* ForgetPassWordView.swift */,
+				23B89B5A1C9EB7040002635B /* login.swift */,
+				23B89B5B1C9EB7040002635B /* SetNewPassword.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +394,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				237E60941C9C2CFB00EFD7D2 /* LaunchScreen.storyboard in Resources */,
+				23B89B4E1C9E91B40002635B /* user.jpg in Resources */,
 				237E60911C9C2CFB00EFD7D2 /* Assets.xcassets in Resources */,
 				237E608F1C9C2CFB00EFD7D2 /* Main.storyboard in Resources */,
+				237E60CC1C9C327600EFD7D2 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +422,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237E60C71C9C2F8000EFD7D2 /* Mypai.swift in Sources */,
+				23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */,
+				23B89B481C9E8D540002635B /* Snow.swift in Sources */,
+				23B89B461C9E8D540002635B /* Graduate.swift in Sources */,
+				23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */,
+				237E60C31C9C2F8000EFD7D2 /* Activity.swift in Sources */,
+				23B89B3F1C9E8CA30002635B /* Home.swift in Sources */,
+				23B89B5D1C9EB7040002635B /* login.swift in Sources */,
+				237E60B91C9C2DAB00EFD7D2 /* Draw.swift in Sources */,
 				237E608C1C9C2CFB00EFD7D2 /* ViewController.swift in Sources */,
+				237E60BC1C9C2E7000EFD7D2 /* Main.swift in Sources */,
 				237E608A1C9C2CFB00EFD7D2 /* AppDelegate.swift in Sources */,
+				23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */,
+				23B89B551C9E92900002635B /* SetNavgationbar.swift in Sources */,
+				23B89B5C1C9EB7040002635B /* ForgetPassWordView.swift in Sources */,
+				23B89B491C9E8D540002635B /* Streetphoto.swift in Sources */,
+				237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */,
+				23B89B4B1C9E901F0002635B /* All.swift in Sources */,
+				23B89B471C9E8D540002635B /* School.swift in Sources */,
+				237E60C51C9C2F8000EFD7D2 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +668,7 @@
 				237E60B01C9C2CFC00EFD7D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		237E60B11C9C2CFC00EFD7D2 /* Build configuration list for PBXNativeTarget "茄子Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +677,7 @@
 				237E60B31C9C2CFC00EFD7D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		237E60B41C9C2CFC00EFD7D2 /* Build configuration list for PBXNativeTarget "茄子UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +686,7 @@
 				237E60B61C9C2CFC00EFD7D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
