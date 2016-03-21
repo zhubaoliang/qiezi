@@ -2,6 +2,7 @@
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
 # use_frameworks!
+pod 'BaiduMapKit' #百度地图SDK
 pod 'Alamofire', '~> 3.0'
 use_frameworks!
 target '茄子' do

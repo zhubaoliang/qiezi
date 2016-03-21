@@ -21,6 +21,7 @@
 		237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C11C9C2F8000EFD7D2 /* Mine.swift */; };
 		237E60C71C9C2F8000EFD7D2 /* Mypai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C21C9C2F8000EFD7D2 /* Mypai.swift */; };
 		237E60CC1C9C327600EFD7D2 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 237E60CB1C9C327600EFD7D2 /* default.png */; };
+		237FB91E1CA029070050075A /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237FB91D1CA029070050075A /* InterfaceBuilderKit.framework */; };
 		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
 		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
 		23B89B3F1C9E8CA30002635B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home.swift */; };
@@ -77,6 +78,7 @@
 		237E60C11C9C2F8000EFD7D2 /* Mine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mine.swift; path = tabitem/Mine.swift; sourceTree = SOURCE_ROOT; };
 		237E60C21C9C2F8000EFD7D2 /* Mypai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mypai.swift; path = tabitem/Mypai.swift; sourceTree = SOURCE_ROOT; };
 		237E60CB1C9C327600EFD7D2 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = Image/default.png; sourceTree = SOURCE_ROOT; };
+		237FB91D1CA029070050075A /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
 		23B89B351C9E85280002635B /* UIGestureForMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureForMain.swift; sourceTree = "<group>"; };
 		23B89B3C1C9E87C20002635B /* CreatTabitems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatTabitems.swift; sourceTree = "<group>"; };
 		23B89B3E1C9E8CA30002635B /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237FB91E1CA029070050075A /* InterfaceBuilderKit.framework in Frameworks */,
 				23CD8BAC1C9FA0F80024450E /* Alamofire.framework in Frameworks */,
 				9BA24789B0D1AADE7B57CC59 /* Pods.framework in Frameworks */,
 			);
@@ -302,6 +305,7 @@
 		61F2985D5015E1582436EABC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				237FB91D1CA029070050075A /* InterfaceBuilderKit.framework */,
 				23CD8BAB1C9FA0F80024450E /* Alamofire.framework */,
 				851EE9664389052635C9B9CD /* Pods.framework */,
 			);
