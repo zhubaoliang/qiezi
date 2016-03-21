@@ -27,6 +27,7 @@ class login: UIViewController {
         
     }
     
+    
     override func viewWillAppear(var animated: Bool) {
         animated = false
         self.title = "登录"
@@ -37,7 +38,7 @@ class login: UIViewController {
         self.navigationController!.navigationBar.barTintColor = UIColor.blackColor()
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         self.tabBarController?.tabBar.hidden = true
-        NSNotificationCenter.defaultCenter().postNotificationName("Show", object: nil)
+        //NSNotificationCenter.defaultCenter().postNotificationName("Show", object: nil)
         
     }
     func BuildLable()

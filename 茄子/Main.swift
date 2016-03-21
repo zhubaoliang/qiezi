@@ -17,15 +17,9 @@ class Main: UITabBarController {
         CreatTabItems()
         Pangesture.addTarget(self, action: ("PangG:"))
         self.view.addGestureRecognizer(Pangesture)
-    }
-    override func viewWillAppear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().postNotificationName("hidden", object: nil)
         
     }
-    override func viewWillDisappear(animated: Bool) {
-        NSNotificationCenter.defaultCenter().postNotificationName("Show", object: nil)
-        
-    }
+    
     override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
                 switch item.tag
         {

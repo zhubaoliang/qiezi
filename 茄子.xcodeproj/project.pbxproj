@@ -176,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				23B89B391C9E86F10002635B /* Othersupport */,
-				23B89B371C9E86C20002635B /* MainView */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -215,6 +214,7 @@
 		23B89B391C9E86F10002635B /* Othersupport */ = {
 			isa = PBXGroup;
 			children = (
+				23B89B371C9E86C20002635B /* MainView */,
 				237E60891C9C2CFB00EFD7D2 /* AppDelegate.swift */,
 				237E608B1C9C2CFB00EFD7D2 /* ViewController.swift */,
 				237E608D1C9C2CFB00EFD7D2 /* Main.storyboard */,

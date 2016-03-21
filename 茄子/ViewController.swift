@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         self.view.addSubview(TabView.view)
         
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
     func push(noti:NSNotification)
     {
         let vc:AnyObject = noti.object!
