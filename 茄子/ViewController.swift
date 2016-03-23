@@ -20,11 +20,16 @@ class ViewController: UIViewController {
         self.view.addSubview(Dra.view)
         self.view.addSubview(TabView.view)
         
+        
     }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
+        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.translucent = false
     }
+    
+    
     func push(noti:NSNotification)
     {
         let vc:AnyObject = noti.object!

@@ -17,8 +17,18 @@ class Main: UITabBarController {
         CreatTabItems()
         Pangesture.addTarget(self, action: ("PangG:"))
         self.view.addGestureRecognizer(Pangesture)
+        SetTabBar()
         
     }
+    
+    func SetTabBar()
+    {
+        self.tabBar.barTintColor = UIColor.blackColor()
+        self.tabBar.translucent = false
+        
+        
+    }
+    
     
     override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
                 switch item.tag

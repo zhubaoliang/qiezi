@@ -183,6 +183,12 @@ class Home: UINavigationController,UIScrollViewDelegate {
         
     }
     
+    func Ueraction()
+    {
+        let main:Main = Main.init()
+        let move:UIGestureForMain  = UIGestureForMain.init()
+        move.Move(main)
+    }
     
     
 }

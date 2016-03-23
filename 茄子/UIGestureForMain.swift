@@ -8,7 +8,16 @@
 
 import UIKit
 class UIGestureForMain {
+
+    func Move(target:UIViewController)
+{
+    UIView.animateWithDuration(0.5, animations:
+        {
     
+            target.view.transform = CGAffineTransformMakeTranslation(target.view.frame.width, 0)
+    })
+    
+    }
 
 
 func PangG(recongnizer:UIPanGestureRecognizer ,flag:Int,target:UIViewController)

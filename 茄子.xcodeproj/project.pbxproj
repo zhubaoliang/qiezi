@@ -21,7 +21,6 @@
 		237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C11C9C2F8000EFD7D2 /* Mine.swift */; };
 		237E60C71C9C2F8000EFD7D2 /* Mypai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C21C9C2F8000EFD7D2 /* Mypai.swift */; };
 		237E60CC1C9C327600EFD7D2 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 237E60CB1C9C327600EFD7D2 /* default.png */; };
-		237FB91E1CA029070050075A /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 237FB91D1CA029070050075A /* InterfaceBuilderKit.framework */; };
 		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
 		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
 		23B89B3F1C9E8CA30002635B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home.swift */; };
@@ -36,6 +35,7 @@
 		23B89B5D1C9EB7040002635B /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5A1C9EB7040002635B /* login.swift */; };
 		23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5B1C9EB7040002635B /* SetNewPassword.swift */; };
 		23CD8BAC1C9FA0F80024450E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD8BAB1C9FA0F80024450E /* Alamofire.framework */; };
+		23DD20C71CA2DAC3005ECE1C /* drawbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */; };
 		9BA24789B0D1AADE7B57CC59 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EE9664389052635C9B9CD /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +93,7 @@
 		23B89B5A1C9EB7040002635B /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = login.swift; path = login/login.swift; sourceTree = "<group>"; };
 		23B89B5B1C9EB7040002635B /* SetNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetNewPassword.swift; path = login/SetNewPassword.swift; sourceTree = "<group>"; };
 		23CD8BAB1C9FA0F80024450E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = drawbg.jpg; path = Image/drawbg.jpg; sourceTree = SOURCE_ROOT; };
 		851EE9664389052635C9B9CD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6C23BBA5D701392646F9651 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				237FB91E1CA029070050075A /* InterfaceBuilderKit.framework in Frameworks */,
 				23CD8BAC1C9FA0F80024450E /* Alamofire.framework in Frameworks */,
 				9BA24789B0D1AADE7B57CC59 /* Pods.framework in Frameworks */,
 			);
@@ -208,6 +208,7 @@
 		237E60C81C9C325A00EFD7D2 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */,
 				23B89B4D1C9E91B40002635B /* user.jpg */,
 				237E60CB1C9C327600EFD7D2 /* default.png */,
 			);
@@ -432,6 +433,7 @@
 				23B89B4E1C9E91B40002635B /* user.jpg in Resources */,
 				237E60911C9C2CFB00EFD7D2 /* Assets.xcassets in Resources */,
 				237E608F1C9C2CFB00EFD7D2 /* Main.storyboard in Resources */,
+				23DD20C71CA2DAC3005ECE1C /* drawbg.jpg in Resources */,
 				237E60CC1C9C327600EFD7D2 /* default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

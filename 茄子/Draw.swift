@@ -9,17 +9,21 @@
 import UIKit
 
 class Draw: UIViewController {
-    
+    let rect:CGRect = UIApplication.sharedApplication().statusBarFrame
     let home:UIButton = UIButton.init()
     let set:UIButton = UIButton.init()
     let about:UIButton = UIButton.init()
     let timebook:UIButton = UIButton.init()
     let privilege:UIButton = UIButton.init()
     let nologin:UIButton = UIButton.init()
+    let topview:UIImageView = UIImageView.init()
+    let drawbg:UIImage = UIImage.init(named: "drawbg.jpg")!
     override func viewDidLoad() {
         super.viewDidLoad()
         BuidbuttonForDra()
         self.view.backgroundColor = UIColor(colorLiteralRed: 0.2, green: 0.8, blue: 1, alpha: 1)
+        SetTopBackground()
+        SetUserPhoto()
     }
     
     func BuidbuttonForDra()
@@ -80,6 +84,28 @@ class Draw: UIViewController {
             
             
         }
+    }
+    
+    func SetTopBackground()
+    {
+        topview.frame = CGRectMake(0, 0, self.view.frame.width * 0.8,self.view.frame.height * 3 / 9 )
+        topview.image = drawbg
+        self.view.addSubview(topview)
+        
+    }
+    
+    func SetUserPhoto()
+    {
+        let User:UIImageView = UIImageView.init()
+        User.frame = CGRectMake(10, rect.height, self.topview.frame.height * 2 / 3, self.topview.frame.height * 2 / 3)
+        User.layer.masksToBounds = true
+        User.layer.cornerRadius = self.topview.frame.height * 2 / 6
+        User.layer.borderWidth = 2
+        User.layer.borderColor = UIColor.whiteColor().CGColor
+        User.image = UIImage.init(named: "user.jpg")
+
+        self.view.addSubview(User)
+        
     }
     
 }
