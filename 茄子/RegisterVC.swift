@@ -71,6 +71,7 @@ class RegisterVC: UIViewController {
         RePasswdTextField.backgroundColor = UIColor.whiteColor()
         RePasswdTextField.layer.cornerRadius = 10
         self.view.addSubview(RePasswdTextField)
+        print("dd")
         
     }
     
