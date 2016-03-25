@@ -21,6 +21,10 @@
 		237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C11C9C2F8000EFD7D2 /* Mine.swift */; };
 		237E60C71C9C2F8000EFD7D2 /* Mypai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E60C21C9C2F8000EFD7D2 /* Mypai.swift */; };
 		237E60CC1C9C327600EFD7D2 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 237E60CB1C9C327600EFD7D2 /* default.png */; };
+		2398B01D1CA530F70015472C /* Loginfunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B01C1CA530F70015472C /* Loginfunc.swift */; };
+		2398B01F1CA541720015472C /* Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B01E1CA541720015472C /* Url.swift */; };
+		2398B0211CA543240015472C /* Httpresult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0201CA543240015472C /* Httpresult.swift */; };
+		2398B0231CA543620015472C /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0221CA543620015472C /* JSONJoy.swift */; };
 		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
 		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
 		23B89B3F1C9E8CA30002635B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home.swift */; };
@@ -79,6 +83,10 @@
 		237E60C21C9C2F8000EFD7D2 /* Mypai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mypai.swift; path = tabitem/Mypai.swift; sourceTree = SOURCE_ROOT; };
 		237E60CB1C9C327600EFD7D2 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = default.png; path = Image/default.png; sourceTree = SOURCE_ROOT; };
 		237FB91D1CA029070050075A /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
+		2398B01C1CA530F70015472C /* Loginfunc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loginfunc.swift; sourceTree = "<group>"; };
+		2398B01E1CA541720015472C /* Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Url.swift; sourceTree = "<group>"; };
+		2398B0201CA543240015472C /* Httpresult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Httpresult.swift; sourceTree = "<group>"; };
+		2398B0221CA543620015472C /* JSONJoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONJoy.swift; sourceTree = "<group>"; };
 		23B89B351C9E85280002635B /* UIGestureForMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureForMain.swift; sourceTree = "<group>"; };
 		23B89B3C1C9E87C20002635B /* CreatTabitems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatTabitems.swift; sourceTree = "<group>"; };
 		23B89B3E1C9E8CA30002635B /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -150,6 +158,7 @@
 		237E60881C9C2CFB00EFD7D2 /* 茄子 */ = {
 			isa = PBXGroup;
 			children = (
+				2398B0241CA54D0A0015472C /* Resgister */,
 				23B89B581C9EB6F10002635B /* Login */,
 				237E60C81C9C325A00EFD7D2 /* Image */,
 				237E60BD1C9C2EF800EFD7D2 /* TabItem */,
@@ -213,6 +222,24 @@
 				237E60CB1C9C327600EFD7D2 /* default.png */,
 			);
 			name = Image;
+			sourceTree = "<group>";
+		};
+		2398B01B1CA5309A0015472C /* Loginfunction */ = {
+			isa = PBXGroup;
+			children = (
+				23B89B5A1C9EB7040002635B /* login.swift */,
+				2398B01C1CA530F70015472C /* Loginfunc.swift */,
+				2398B0201CA543240015472C /* Httpresult.swift */,
+				2398B0221CA543620015472C /* JSONJoy.swift */,
+			);
+			name = Loginfunction;
+			sourceTree = "<group>";
+		};
+		2398B0241CA54D0A0015472C /* Resgister */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resgister;
 			sourceTree = "<group>";
 		};
 		23B89B371C9E86C20002635B /* MainView */ = {
@@ -296,9 +323,10 @@
 		23B89B581C9EB6F10002635B /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2398B01B1CA5309A0015472C /* Loginfunction */,
 				23B89B591C9EB7040002635B /* ForgetPassWordView.swift */,
-				23B89B5A1C9EB7040002635B /* login.swift */,
 				23B89B5B1C9EB7040002635B /* SetNewPassword.swift */,
+				2398B01E1CA541720015472C /* Url.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -511,8 +539,10 @@
 				23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */,
 				23B89B481C9E8D540002635B /* Snow.swift in Sources */,
 				23B89B461C9E8D540002635B /* Graduate.swift in Sources */,
+				2398B0231CA543620015472C /* JSONJoy.swift in Sources */,
 				23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */,
 				237E60C31C9C2F8000EFD7D2 /* Activity.swift in Sources */,
+				2398B0211CA543240015472C /* Httpresult.swift in Sources */,
 				23B89B3F1C9E8CA30002635B /* Home.swift in Sources */,
 				23B89B5D1C9EB7040002635B /* login.swift in Sources */,
 				237E60B91C9C2DAB00EFD7D2 /* Draw.swift in Sources */,
@@ -522,9 +552,11 @@
 				23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */,
 				23B89B551C9E92900002635B /* SetNavgationbar.swift in Sources */,
 				23B89B5C1C9EB7040002635B /* ForgetPassWordView.swift in Sources */,
+				2398B01D1CA530F70015472C /* Loginfunc.swift in Sources */,
 				23B89B491C9E8D540002635B /* Streetphoto.swift in Sources */,
 				237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */,
 				23B89B4B1C9E901F0002635B /* All.swift in Sources */,
+				2398B01F1CA541720015472C /* Url.swift in Sources */,
 				23B89B471C9E8D540002635B /* School.swift in Sources */,
 				237E60C51C9C2F8000EFD7D2 /* Message.swift in Sources */,
 			);

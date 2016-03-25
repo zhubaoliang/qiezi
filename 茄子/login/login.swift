@@ -28,6 +28,7 @@ class login: UIViewController {
     }
     
     
+    
     override func viewWillAppear(var animated: Bool) {
         animated = false
         self.title = "登录"
@@ -84,6 +85,7 @@ class login: UIViewController {
         LoginButton.setTitle("登录", forState: UIControlState.Normal)
         LoginButton.layer.cornerRadius = 10
         LoginButton.showsTouchWhenHighlighted = true
+        LoginButton.addTarget(self, action: Selector("UserVerify"), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(LoginButton)
         CancelButton.frame = CGRectMake(self.view.frame.width / 2 + 5 , self.view.frame.height * 3 / 9 + 130 + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width * 9 / 28, 40)
         CancelButton.backgroundColor = UIColor.orangeColor()
@@ -100,6 +102,7 @@ class login: UIViewController {
         self.view.addSubview(ForgetPassWord)
     }
     
+    
     func ForGetView()
     {
         let FORGETP:ForgetPassWordView = ForgetPassWordView.init()
@@ -115,6 +118,14 @@ class login: UIViewController {
     func ExitkeyBoard(ExitKeyBoard:UITapGestureRecognizer)
     {
         self.view.endEditing(true)
+    }
+    
+    func UserVerify()
+    {
+        let verify: Loginfunc = Loginfunc.init()
+        verify.ResiterVerifyNumberLength(self, Username: userField)
+        verify.Loginverify(userField, PasswdField: passField)
+        
     }
     
 }
