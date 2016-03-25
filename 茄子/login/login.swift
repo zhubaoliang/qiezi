@@ -71,7 +71,7 @@ class login: UIViewController {
     {
             let User: UIImageView = UIImageView.init(frame: CGRectMake(self.view.frame.width / 4, 2 , self.view.frame.width / 2, self.view.frame.width / 2))
             User.layer.masksToBounds = true
-            User.lay000000000000000000000000000000000er.cornerRadius = self.view.frame.width / 4
+            User.layer.cornerRadius = self.view.frame.width / 4
             User.layer.borderWidth = 2
             User.layer.borderColor = UIColor.whiteColor().CGColor
             User.image = UIImage.init(named: "user.jpg")
