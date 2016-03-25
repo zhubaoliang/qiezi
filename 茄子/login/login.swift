@@ -92,6 +92,7 @@ class login: UIViewController {
         CancelButton.setTitle("注册", forState: UIControlState.Normal)
         CancelButton.layer.cornerRadius = 10
         CancelButton.showsTouchWhenHighlighted = true
+        CancelButton.addTarget(self, action: Selector("PushToRegisterVC"), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(CancelButton)
         ForgetPassWord.frame = CGRectMake(self.view.frame.width / 2 + 5, self.view.frame.height * 3 / 9  + 190 + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width * 9 / 28, 20)
         ForgetPassWord.setTitle("忘记密码", forState: UIControlState.Normal)
@@ -107,6 +108,13 @@ class login: UIViewController {
     {
         let FORGETP:ForgetPassWordView = ForgetPassWordView.init()
         self.navigationController?.pushViewController(FORGETP, animated: true)
+    }
+    
+    func PushToRegisterVC()
+    {
+        let Resiter: RegisterVC = RegisterVC.init()
+        self.navigationController?.pushViewController(Resiter, animated: true)
+    
     }
     
     func GestureForExitKeyBoard()
