@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UIAlertViewDelegate{
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         let root:UINavigationController = UINavigationController.init(rootViewController: ViewController.init())
         self.window?.rootViewController = root
         // Override point for customization after application launch.

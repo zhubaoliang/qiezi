@@ -69,7 +69,7 @@ class login: UIViewController {
     
     func BuilduserPhoto()
     {
-            let User: UIImageView = UIImageView.init(frame: CGRectMake(self.view.frame.width / 4, status.height + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width / 2, self.view.frame.width / 2))
+            let User: UIImageView = UIImageView.init(frame: CGRectMake(self.view.frame.width / 4, 2 , self.view.frame.width / 2, self.view.frame.width / 2))
             User.layer.masksToBounds = true
             User.layer.cornerRadius = self.view.frame.width / 4
             User.layer.borderWidth = 2
