@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class RegisterVC: UIViewController {
     let StatuRect: CGRect = UIApplication.sharedApplication().statusBarFrame
     let PhoneNumberTextFiled: UITextField = UITextField.init()
@@ -98,7 +98,7 @@ class RegisterVC: UIViewController {
         VerifyNum.backgroundColor =  UIColor.whiteColor()
         VerifyNum.frame = CGRectMake(self.view.frame.width * 3 / 4, 165, self.view.frame.width / 4, 35)
         VerifyNum.setTitle("获取验证码", forState: UIControlState.Normal)
-        VerifyNum.addTarget(self, action: Selector("GetVerifyNumber"), forControlEvents: UIControlEvents.TouchUpInside)
+        VerifyNum.addTarget(self, action: Selector("senderMessage"), forControlEvents: UIControlEvents.TouchUpInside)
         VerifyNum.showsTouchWhenHighlighted  = true
         VerifyNum.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         self.view.addSubview(VerifyNum)
@@ -114,16 +114,13 @@ class RegisterVC: UIViewController {
         
     
     }
-    func GetVerifyNumber()
-    {
-        print("获取验证码")
-    }
     func NextStepFunction()
     {
         print("下一步")
         let Function:RegisterFunction = RegisterFunction.init()
         if( Function.VerifyNum(PhoneNumberTextFiled, PasswdField: PasswdTextField, Targetview: self, RepasswordField: RePasswdTextField,verfiynumer:VerifyNumForRegister) )
         {
+            Function.RegisterYanZheng(PhoneNumberTextFiled, PasswdTextField: PasswdTextField, TargetView: self)
             self.navigationController?.popViewControllerAnimated(true)
         }
         
@@ -138,6 +135,23 @@ class RegisterVC: UIViewController {
     func ExitkeyBoard(ExitKeyBoard:UITapGestureRecognizer)
     {
         self.view.endEditing(true)
+    }
+    
+    func senderMessage()
+    {
+        print("发送验证码请求")
+        let url = apiUrl+"SendMobileCode"
+        let param = [
+            "phone":PhoneNumberTextFiled.text!,
+            
+        ]
+        Alamofire.request(.GET, url, parameters: param).response { request, response, json, error in
+            if(error != nil){
+            }
+            else{
+            }
+            
+        }
     }
 
     

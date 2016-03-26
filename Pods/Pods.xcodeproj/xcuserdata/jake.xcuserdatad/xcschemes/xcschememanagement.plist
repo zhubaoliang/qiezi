@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-茄子.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CBBCA96810D9C9DB7F6023AB4A00C25</key>
+		<key>363AD5252F176C8D10BA97BD94F30F22</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>57CFC4DF5A94826729A3A532FC59EE52</key>
+		<key>627951AD64AE07CCC7EACCC72FB60FE7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7724CBA243AD98D8D541ACA9C01B597</key>
+		<key>A86EA4EE6A10227693A2F267D980943E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F61F5D127A34A0D4A2BE9B385BF6617D</key>
+		<key>B24B03E9F3D4EF9D98E355C835162C92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E61CE3B6DFA1FE6B3E296965C76C0E10</key>
 		<dict>
 			<key>primary</key>
 			<true/>

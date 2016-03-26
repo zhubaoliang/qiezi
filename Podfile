@@ -4,6 +4,7 @@
 # use_frameworks!
 pod 'BaiduMapKit' #百度地图SDK
 pod 'Alamofire', '~> 3.0'
+pod 'MBProgressHUD'
 use_frameworks!
 target '茄子' do
 
