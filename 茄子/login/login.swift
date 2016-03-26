@@ -59,6 +59,7 @@ class login: UIViewController {
         userField.frame = CGRectMake(self.view.frame.width / 4 , self.view.frame.height * 3 / 9 + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width / 2, 35)
         userField.backgroundColor = UIColor.whiteColor()
         userField.layer.cornerRadius = 10
+        userField.keyboardType = UIKeyboardType.NumberPad
         passField.frame = CGRectMake(self.view.frame.width / 4 , self.view.frame.height * 3 / 9 + 50 + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width / 2, 35)
         passField.layer.cornerRadius = 10
         passField.backgroundColor = UIColor.whiteColor()

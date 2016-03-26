@@ -10,12 +10,18 @@ import UIKit
 
 class RegisterVC: UIViewController {
     let StatuRect: CGRect = UIApplication.sharedApplication().statusBarFrame
+    let PhoneNumberTextFiled: UITextField = UITextField.init()
+    let PasswdTextField: UITextField = UITextField.init()
+    let RePasswdTextField: UITextField = UITextField.init()
+    let VerifyNumForRegister: UITextField = UITextField.init()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.grayColor()
         self.title = "注册"
         LableForView()
         BuildTextField()
+        BuidButtonForVerifyNum()
+        GestureForExitKeyBoard()
     }
     
     func LableForView()
@@ -50,28 +56,89 @@ class RegisterVC: UIViewController {
         self.view.addSubview(RePasswd)
         let VerifyNumber:UILabel = UILabel.init()
         VerifyNumber.text = "输入收到的验证码"
-        VerifyNumber.frame = CGRectMake(0, 135,self.view.frame.width / 4, 35)
+        VerifyNumber.frame = CGRectMake(0, 165,self.view.frame.width / 3, 35)
+        VerifyNumber.textAlignment = NSTextAlignment.Right
+        VerifyNumber.adjustsFontSizeToFitWidth = true
         self.view.addSubview(VerifyNumber)
     }
     
     func BuildTextField()
     {
-        let PhoneNumberTextFiled: UITextField = UITextField.init()
+        
         PhoneNumberTextFiled.frame = CGRectMake(self.view.frame.width / 4, 45, self.view.frame.width / 2, 35)
         PhoneNumberTextFiled.backgroundColor = UIColor.whiteColor()
         PhoneNumberTextFiled.layer.cornerRadius = 10
+        PhoneNumberTextFiled.keyboardType = UIKeyboardType.NumberPad
         self.view.addSubview(PhoneNumberTextFiled)
-        let PasswdTextField: UITextField = UITextField.init()
+        
         PasswdTextField.frame = CGRectMake(self.view.frame.width / 4, 85, self.view.frame.width / 2, 35)
         PasswdTextField.backgroundColor = UIColor.whiteColor()
         PasswdTextField.layer.cornerRadius = 10
+        PasswdTextField.secureTextEntry = true
         self.view.addSubview(PasswdTextField)
-        let RePasswdTextField: UITextField = UITextField.init()
+        
         RePasswdTextField.frame = CGRectMake(self.view.frame.width / 4, 125, self.view.frame.width / 2, 35)
         RePasswdTextField.backgroundColor = UIColor.whiteColor()
         RePasswdTextField.layer.cornerRadius = 10
+        RePasswdTextField.secureTextEntry = true
         self.view.addSubview(RePasswdTextField)
         
+        VerifyNumForRegister.frame = CGRectMake(self.view.frame.width / 3, 165, self.view.frame.width / 3, 35)
+        VerifyNumForRegister.layer.cornerRadius = 10
+        VerifyNumForRegister.backgroundColor = UIColor.whiteColor()
+        self.view.addSubview(VerifyNumForRegister)
+        
     }
+    
+    func BuidButtonForVerifyNum()
+    {
+        let VerifyNum:UIButton = UIButton.init()
+        VerifyNum.layer.cornerRadius = 10
+        VerifyNum.setTitle("获取验证码", forState: UIControlState.Normal)
+        VerifyNum.backgroundColor =  UIColor.whiteColor()
+        VerifyNum.frame = CGRectMake(self.view.frame.width * 3 / 4, 165, self.view.frame.width / 4, 35)
+        VerifyNum.setTitle("获取验证码", forState: UIControlState.Normal)
+        VerifyNum.addTarget(self, action: Selector("GetVerifyNumber"), forControlEvents: UIControlEvents.TouchUpInside)
+        VerifyNum.showsTouchWhenHighlighted  = true
+        VerifyNum.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        self.view.addSubview(VerifyNum)
+        let NextStep: UIButton = UIButton.init()
+        NextStep.frame = CGRectMake(self.view.frame.width / 2 - self.view.frame.width / 6, 210, self.view.frame.width / 3, 35)
+        NextStep.backgroundColor = UIColor.whiteColor()
+        NextStep.layer.cornerRadius  = 10
+        NextStep.setTitle("下一步", forState: UIControlState.Normal)
+        NextStep.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
+        NextStep.addTarget(self, action: Selector("NextStepFunction"), forControlEvents: UIControlEvents.TouchUpInside)
+        NextStep.showsTouchWhenHighlighted = true
+        self.view.addSubview(NextStep)
+        
+    
+    }
+    func GetVerifyNumber()
+    {
+        print("获取验证码")
+    }
+    func NextStepFunction()
+    {
+        print("下一步")
+        let Function:RegisterFunction = RegisterFunction.init()
+        if( Function.VerifyNum(PhoneNumberTextFiled, PasswdField: PasswdTextField, Targetview: self, RepasswordField: RePasswdTextField,verfiynumer:VerifyNumForRegister) )
+        {
+            self.navigationController?.popViewControllerAnimated(true)
+        }
+        
+    }
+    
+    func GestureForExitKeyBoard()
+    {
+        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: Selector("ExitkeyBoard:"))
+        ExitKeyBoard.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(ExitKeyBoard)
+    }
+    func ExitkeyBoard(ExitKeyBoard:UITapGestureRecognizer)
+    {
+        self.view.endEditing(true)
+    }
+
     
 }

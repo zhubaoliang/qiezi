@@ -26,6 +26,7 @@
 		2398B0211CA543240015472C /* Httpresult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0201CA543240015472C /* Httpresult.swift */; };
 		2398B0231CA543620015472C /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0221CA543620015472C /* JSONJoy.swift */; };
 		2398B0261CA54F510015472C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0251CA54F510015472C /* RegisterVC.swift */; };
+		23A801351CA68CC4001FE209 /* RegisterFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A801341CA68CC4001FE209 /* RegisterFunction.swift */; };
 		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
 		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
 		23B89B3F1C9E8CA30002635B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home.swift */; };
@@ -89,6 +90,7 @@
 		2398B0201CA543240015472C /* Httpresult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Httpresult.swift; sourceTree = "<group>"; };
 		2398B0221CA543620015472C /* JSONJoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONJoy.swift; sourceTree = "<group>"; };
 		2398B0251CA54F510015472C /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		23A801341CA68CC4001FE209 /* RegisterFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFunction.swift; sourceTree = "<group>"; };
 		23B89B351C9E85280002635B /* UIGestureForMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureForMain.swift; sourceTree = "<group>"; };
 		23B89B3C1C9E87C20002635B /* CreatTabitems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatTabitems.swift; sourceTree = "<group>"; };
 		23B89B3E1C9E8CA30002635B /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				2398B0251CA54F510015472C /* RegisterVC.swift */,
+				23A801341CA68CC4001FE209 /* RegisterFunction.swift */,
 			);
 			name = Resgister;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				23B89B551C9E92900002635B /* SetNavgationbar.swift in Sources */,
 				23B89B5C1C9EB7040002635B /* ForgetPassWordView.swift in Sources */,
 				2398B01D1CA530F70015472C /* Loginfunc.swift in Sources */,
+				23A801351CA68CC4001FE209 /* RegisterFunction.swift in Sources */,
 				23B89B491C9E8D540002635B /* Streetphoto.swift in Sources */,
 				2398B0261CA54F510015472C /* RegisterVC.swift in Sources */,
 				237E60C61C9C2F8000EFD7D2 /* Mine.swift in Sources */,
