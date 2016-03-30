@@ -86,6 +86,7 @@
 		23B89B5D1C9EB7040002635B /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5A1C9EB7040002635B /* login.swift */; };
 		23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5B1C9EB7040002635B /* SetNewPassword.swift */; };
 		23CD8BAC1C9FA0F80024450E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD8BAB1C9FA0F80024450E /* Alamofire.framework */; };
+		23D48C691CAC0A7E006AFF4A /* UIScrollviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */; };
 		23DD20C71CA2DAC3005ECE1C /* drawbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */; };
 		23F7594A1CA6B01400158FDD /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23F759491CA6B01400158FDD /* MBProgressHUD.framework */; };
 		9BA24789B0D1AADE7B57CC59 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851EE9664389052635C9B9CD /* Pods.framework */; };
@@ -197,6 +198,7 @@
 		23B89B5A1C9EB7040002635B /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = login.swift; path = login/login.swift; sourceTree = "<group>"; };
 		23B89B5B1C9EB7040002635B /* SetNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetNewPassword.swift; path = login/SetNewPassword.swift; sourceTree = "<group>"; };
 		23CD8BAB1C9FA0F80024450E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollviews.swift; sourceTree = "<group>"; };
 		23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = drawbg.jpg; path = Image/drawbg.jpg; sourceTree = SOURCE_ROOT; };
 		23F759491CA6B01400158FDD /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/MBProgressHUD.framework"; sourceTree = "<group>"; };
 		851EE9664389052635C9B9CD /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,6 +345,8 @@
 			children = (
 				236C99891CAAAE1C00039501 /* Homes.swift */,
 				238644431CAB6FFE0053C8FA /* collectioncell.swift */,
+				23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */,
+				23B89B4A1C9E901F0002635B /* All.swift */,
 			);
 			name = Suport;
 			sourceTree = "<group>";
@@ -506,7 +510,6 @@
 				23B89B431C9E8D540002635B /* School.swift */,
 				23B89B441C9E8D540002635B /* Snow.swift */,
 				23B89B451C9E8D540002635B /* Streetphoto.swift */,
-				23B89B4A1C9E901F0002635B /* All.swift */,
 			);
 			name = Scrollview;
 			sourceTree = "<group>";
@@ -821,6 +824,7 @@
 				237E608A1C9C2CFB00EFD7D2 /* AppDelegate.swift in Sources */,
 				23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */,
 				23B89B551C9E92900002635B /* SetNavgationbar.swift in Sources */,
+				23D48C691CAC0A7E006AFF4A /* UIScrollviews.swift in Sources */,
 				236C99851CAAADE800039501 /* DIYAutoFooter.swift in Sources */,
 				236C99731CAAAD9A00039501 /* RefreshBackNormalFooter.swift in Sources */,
 				236C99621CAAACED00039501 /* UIScrollView+Refresh.swift in Sources */,

@@ -29,6 +29,7 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         SetTitilescrollview()
         SetButtonForTitleScrollview()
         Buttonaction(Button1)
+        
     }
     
     override func viewWillAppear(var animated: Bool) {
@@ -60,6 +61,7 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         
         Titilescroll.backgroundColor = UIColor.blackColor()
         Titilescroll.frame = CGRectMake(0, (self.navigationBar.frame.height) + rect.height + 1,self.view.frame.width , 46)
+        all.frames = CGRectMake(0, (self.navigationBar.frame.height) + rect.height + 1, 0, 0)
         Titilescroll.contentSize = CGSizeMake(500 , 0)
         self.automaticallyAdjustsScrollViewInsets = false
         
@@ -170,7 +172,7 @@ class Home1: UINavigationController,UIScrollViewDelegate {
     func SetFrameForViewOfTitleview(willset:UIViewController) ->UIView
     {
         
-        willset.view.frame = CGRectMake(0, (self.navigationBar.frame.height) + rect.height + 1 + 46, self.view.frame.width, self.view.frame.height - (self.navigationBar.frame.height) - rect.height - 47 - 49 )
+        willset.view.frame = CGRectMake(0, (self.navigationBar.frame.height) + rect.height + 1 + 46, self.view.frame.width, self.view.frame.height - (self.navigationBar.frame.height) - rect.height - 96 - UIApplication.sharedApplication().statusBarFrame.height )
         return willset.view
     }
     

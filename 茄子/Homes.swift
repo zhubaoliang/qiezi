@@ -10,21 +10,27 @@ import UIKit
 
 class Homes: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
     let Cellforcollction =  "Cell"
-    let width = UIScreen.mainScreen().bounds.width
-    let height = UIScreen.mainScreen().bounds.height
+    public var frames:CGRect = CGRect.init()
     var collectinveiwany:AnyObject!
     override func viewDidLoad() {
         super.viewDidLoad()
         SetUicollectionvew()
         RefreshConfig()
+        let sc:All = All.init()
+        sc.view.frame =  CGRectMake(0, 0, self.view.frame.width, 200)
+        (self.collectinveiwany as! UICollectionView).addSubview(sc.view)
     }
     func SetUicollectionvew()
     {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .Vertical
-        layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 0
-        let collectionView = UICollectionView(frame: CGRectMake(0,0,width,height), collectionViewLayout: layout)
+        layout.minimumInteritemSpacing = 10
+        layout.minimumLineSpacing = 10
+        let collectionView = UICollectionView(frame: CGRectMake(0,0,self.view.frame.width,self.view.frame.height - frames.height - 79 - 47 ), collectionViewLayout: layout)
+    if( UIScreen.mainScreen().bounds.height == collectionView.frame.height)
+    {
+        print("equle")
+        }
         collectionView.backgroundColor = UIColor.whiteColor()
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -88,7 +94,7 @@ class Homes: UIViewController,UICollectionViewDataSource,UICollectionViewDelegat
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: width, height: 17)
+        return CGSize(width: self.view.frame.width, height: 300)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
