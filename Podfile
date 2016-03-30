@@ -5,6 +5,10 @@
 pod 'BaiduMapKit' #百度地图SDK
 pod 'Alamofire', '~> 3.0'
 pod 'MBProgressHUD'
+pod 'MJRefresh'
+pod 'SDWebImage'
+pod 'JGProgressHUD'
+pod 'Kanna'
 use_frameworks!
 target '茄子' do
 

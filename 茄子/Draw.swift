@@ -102,7 +102,7 @@ class Draw: UIViewController {
         User.layer.cornerRadius = self.topview.frame.height * 2 / 6
         User.layer.borderWidth = 2
         User.layer.borderColor = UIColor.whiteColor().CGColor
-        User.image = UIImage.init(named: "user.jpg")
+        User.image = UIImage.init(named: "user.png")
 
         self.view.addSubview(User)
         

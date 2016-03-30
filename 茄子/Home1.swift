@@ -8,9 +8,9 @@
 
 import UIKit
 
-class Home: UINavigationController,UIScrollViewDelegate {
+class Home1: UINavigationController,UIScrollViewDelegate {
     let Tool:UIToolbar = UIToolbar.init()
-    let all:All = All.init()
+    let all:Homes = Homes.init()
     let Nav:UINavigationBar = UINavigationBar.init()
     let Titilescroll: UIScrollView = UIScrollView.init()
     let rect: CGRect = UIApplication.sharedApplication().statusBarFrame
@@ -183,12 +183,6 @@ class Home: UINavigationController,UIScrollViewDelegate {
         
     }
     
-    func Ueraction()
-    {
-        let main:Main = Main.init()
-        let move:UIGestureForMain  = UIGestureForMain.init()
-        move.Move(main)
-    }
     
     
 }

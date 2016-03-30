@@ -23,7 +23,7 @@ class Main: UITabBarController {
     
     func SetTabBar()
     {
-        self.tabBar.barTintColor = UIColor.blackColor()
+        self.tabBar.barTintColor = UIColor.whiteColor()
         self.tabBar.translucent = false
         
         

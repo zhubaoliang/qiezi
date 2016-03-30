@@ -18,7 +18,7 @@ class All: UIViewController ,UIScrollViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         SetFrame(CGRectMake(0, 0, self.view.frame.width, 200) )
-        self.setArray([UIImage.init(named: "user.jpg")!,UIImage.init(named: "user.jpg")!,UIImage.init(named: "user.jpg")!,UIImage.init(named: "user.jpg")!])
+        self.setArray([UIImage.init(named: "homepage_p3.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_pic1.jpg")!,UIImage.init(named: "homepage_pic2.jpg")!])
         self.view.backgroundColor = UIColor.redColor()
         self.openTimer()
     }

@@ -22,6 +22,7 @@ class SetNavgationbar{
     internal var targets:UINavigationController = UINavigationController.init()
     func Functions(target:UINavigationController)
     {
+        
         Buildbar(target)
         SetToolbar(target)
         SetUserPhoto(target)
