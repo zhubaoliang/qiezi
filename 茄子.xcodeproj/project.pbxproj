@@ -74,6 +74,8 @@
 		2398B0261CA54F510015472C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0251CA54F510015472C /* RegisterVC.swift */; };
 		23A801351CA68CC4001FE209 /* RegisterFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A801341CA68CC4001FE209 /* RegisterFunction.swift */; };
 		23AF9CB01CAD185A005C468A /* Imageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF9CAF1CAD185A005C468A /* Imageview.swift */; };
+		23B6585F1CAD650300E04EF7 /* LoadDataFromNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B6585E1CAD650300E04EF7 /* LoadDataFromNet.swift */; };
+		23B658611CAD69EA00E04EF7 /* CleanCach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B658601CAD69EA00E04EF7 /* CleanCach.swift */; };
 		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
 		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
 		23B89B3F1C9E8CA30002635B /* Home1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home1.swift */; };
@@ -188,6 +190,8 @@
 		239B752F1CA9379B0031917A /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "Pods/../build/Debug-iphoneos/MJRefresh.framework"; sourceTree = "<group>"; };
 		23A801341CA68CC4001FE209 /* RegisterFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFunction.swift; sourceTree = "<group>"; };
 		23AF9CAF1CAD185A005C468A /* Imageview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imageview.swift; sourceTree = "<group>"; };
+		23B6585E1CAD650300E04EF7 /* LoadDataFromNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadDataFromNet.swift; sourceTree = "<group>"; };
+		23B658601CAD69EA00E04EF7 /* CleanCach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanCach.swift; sourceTree = "<group>"; };
 		23B89B351C9E85280002635B /* UIGestureForMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureForMain.swift; sourceTree = "<group>"; };
 		23B89B3C1C9E87C20002635B /* CreatTabitems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatTabitems.swift; sourceTree = "<group>"; };
 		23B89B3E1C9E8CA30002635B /* Home1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home1.swift; sourceTree = "<group>"; };
@@ -352,6 +356,8 @@
 				23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */,
 				23B89B4A1C9E901F0002635B /* All.swift */,
 				23AF9CAF1CAD185A005C468A /* Imageview.swift */,
+				23B6585E1CAD650300E04EF7 /* LoadDataFromNet.swift */,
+				23B658601CAD69EA00E04EF7 /* CleanCach.swift */,
 			);
 			name = Suport;
 			sourceTree = "<group>";
@@ -836,11 +842,13 @@
 				236C99851CAAADE800039501 /* DIYAutoFooter.swift in Sources */,
 				236C99731CAAAD9A00039501 /* RefreshBackNormalFooter.swift in Sources */,
 				236C99621CAAACED00039501 /* UIScrollView+Refresh.swift in Sources */,
+				23B658611CAD69EA00E04EF7 /* CleanCach.swift in Sources */,
 				23B89B5C1C9EB7040002635B /* ForgetPassWordView.swift in Sources */,
 				2398B01D1CA530F70015472C /* Loginfunc.swift in Sources */,
 				23A801351CA68CC4001FE209 /* RegisterFunction.swift in Sources */,
 				23B89B491C9E8D540002635B /* Streetphoto.swift in Sources */,
 				236C99781CAAADC300039501 /* RefreshGifHeader.swift in Sources */,
+				23B6585F1CAD650300E04EF7 /* LoadDataFromNet.swift in Sources */,
 				236C99561CAAACC000039501 /* RefreshAutoFooter.swift in Sources */,
 				236C99571CAAACC000039501 /* RefreshBackFooter.swift in Sources */,
 				236C99791CAAADC300039501 /* RefreshNormalHeader.swift in Sources */,

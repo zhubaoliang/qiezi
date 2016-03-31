@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Foundation
 class Homes: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
     let Cellforcollction =  "Cell"
     let Middleview:UIView = UIView.init()
@@ -127,7 +127,11 @@ class Homes: UIViewController,UICollectionViewDataSource,UICollectionViewDelegat
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         // print("(\(indexPath.section),\(indexPath.row))")
         print("ddd")
+        
+        
         (self.collectinveiwany as! UICollectionView).refreshHeader.endRefreshing()
+        let clean:CleanCash = CleanCash.init()
+        clean.CleanCashForApp(self)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
