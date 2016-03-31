@@ -73,6 +73,7 @@
 		2398B0231CA543620015472C /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0221CA543620015472C /* JSONJoy.swift */; };
 		2398B0261CA54F510015472C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0251CA54F510015472C /* RegisterVC.swift */; };
 		23A801351CA68CC4001FE209 /* RegisterFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A801341CA68CC4001FE209 /* RegisterFunction.swift */; };
+		23AF9CB01CAD185A005C468A /* Imageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF9CAF1CAD185A005C468A /* Imageview.swift */; };
 		23B89B361C9E85280002635B /* UIGestureForMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B351C9E85280002635B /* UIGestureForMain.swift */; };
 		23B89B3D1C9E87C20002635B /* CreatTabitems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3C1C9E87C20002635B /* CreatTabitems.swift */; };
 		23B89B3F1C9E8CA30002635B /* Home1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B3E1C9E8CA30002635B /* Home1.swift */; };
@@ -85,6 +86,7 @@
 		23B89B5C1C9EB7040002635B /* ForgetPassWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B591C9EB7040002635B /* ForgetPassWordView.swift */; };
 		23B89B5D1C9EB7040002635B /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5A1C9EB7040002635B /* login.swift */; };
 		23B89B5E1C9EB7040002635B /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B89B5B1C9EB7040002635B /* SetNewPassword.swift */; };
+		23C0AC5F1CACE0070038E946 /* arrow@2x副本.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C0AC5E1CACE0070038E946 /* arrow@2x副本.png */; };
 		23CD8BAC1C9FA0F80024450E /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD8BAB1C9FA0F80024450E /* Alamofire.framework */; };
 		23D48C691CAC0A7E006AFF4A /* UIScrollviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */; };
 		23DD20C71CA2DAC3005ECE1C /* drawbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */; };
@@ -185,6 +187,7 @@
 		2398B0251CA54F510015472C /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		239B752F1CA9379B0031917A /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "Pods/../build/Debug-iphoneos/MJRefresh.framework"; sourceTree = "<group>"; };
 		23A801341CA68CC4001FE209 /* RegisterFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFunction.swift; sourceTree = "<group>"; };
+		23AF9CAF1CAD185A005C468A /* Imageview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imageview.swift; sourceTree = "<group>"; };
 		23B89B351C9E85280002635B /* UIGestureForMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGestureForMain.swift; sourceTree = "<group>"; };
 		23B89B3C1C9E87C20002635B /* CreatTabitems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatTabitems.swift; sourceTree = "<group>"; };
 		23B89B3E1C9E8CA30002635B /* Home1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home1.swift; sourceTree = "<group>"; };
@@ -197,6 +200,7 @@
 		23B89B591C9EB7040002635B /* ForgetPassWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForgetPassWordView.swift; path = login/ForgetPassWordView.swift; sourceTree = "<group>"; };
 		23B89B5A1C9EB7040002635B /* login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = login.swift; path = login/login.swift; sourceTree = "<group>"; };
 		23B89B5B1C9EB7040002635B /* SetNewPassword.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetNewPassword.swift; path = login/SetNewPassword.swift; sourceTree = "<group>"; };
+		23C0AC5E1CACE0070038E946 /* arrow@2x副本.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "arrow@2x副本.png"; path = "Image/arrow@2x副本.png"; sourceTree = SOURCE_ROOT; };
 		23CD8BAB1C9FA0F80024450E /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollviews.swift; sourceTree = "<group>"; };
 		23DD20C61CA2DAC3005ECE1C /* drawbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = drawbg.jpg; path = Image/drawbg.jpg; sourceTree = SOURCE_ROOT; };
@@ -347,6 +351,7 @@
 				238644431CAB6FFE0053C8FA /* collectioncell.swift */,
 				23D48C681CAC0A7E006AFF4A /* UIScrollviews.swift */,
 				23B89B4A1C9E901F0002635B /* All.swift */,
+				23AF9CAF1CAD185A005C468A /* Imageview.swift */,
 			);
 			name = Suport;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 		237E60C81C9C325A00EFD7D2 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				23C0AC5E1CACE0070038E946 /* arrow@2x副本.png */,
 				230216311CAA43AF00937CEF /* btn_match.png */,
 				230216321CAA43AF00937CEF /* btn_me_off.png */,
 				230216331CAA43AF00937CEF /* btn_me_on.png */,
@@ -705,6 +711,7 @@
 				230216441CAA43AF00937CEF /* btn_me_on.png in Resources */,
 				237E60911C9C2CFB00EFD7D2 /* Assets.xcassets in Resources */,
 				230216481CAA43AF00937CEF /* btn_square_on.png in Resources */,
+				23C0AC5F1CACE0070038E946 /* arrow@2x副本.png in Resources */,
 				230216421CAA43AF00937CEF /* btn_match.png in Resources */,
 				2302164F1CAA43AF00937CEF /* nearpeople.png in Resources */,
 				230216431CAA43AF00937CEF /* btn_me_off.png in Resources */,
@@ -811,6 +818,7 @@
 				236C996E1CAAAD8100039501 /* RefreshAutoStateFooter.swift in Sources */,
 				237E60C31C9C2F8000EFD7D2 /* Activity.swift in Sources */,
 				2398B0211CA543240015472C /* Httpresult.swift in Sources */,
+				23AF9CB01CAD185A005C468A /* Imageview.swift in Sources */,
 				23B89B3F1C9E8CA30002635B /* Home1.swift in Sources */,
 				236C996C1CAAAD8100039501 /* RefreshAutoGifFooter.swift in Sources */,
 				236C997A1CAAADC300039501 /* RefreshStateHeader.swift in Sources */,

@@ -18,12 +18,14 @@ class Main: UITabBarController {
         Pangesture.addTarget(self, action: ("PangG:"))
         self.view.addGestureRecognizer(Pangesture)
         SetTabBar()
+       
         
     }
     
     func SetTabBar()
     {
         self.tabBar.barTintColor = UIColor.whiteColor()
+        self.tabBar.frame = CGRectMake(0, self.view.frame.height - 49, self.view.frame.width, 49)
         self.tabBar.translucent = false
         
         

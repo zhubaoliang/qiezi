@@ -10,6 +10,7 @@ import UIKit
 
 class Home1: UINavigationController,UIScrollViewDelegate {
     let Tool:UIToolbar = UIToolbar.init()
+    let Underline:UILabel = UILabel.init()
     let all:Homes = Homes.init()
     let Nav:UINavigationBar = UINavigationBar.init()
     let Titilescroll: UIScrollView = UIScrollView.init()
@@ -29,6 +30,8 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         SetTitilescrollview()
         SetButtonForTitleScrollview()
         Buttonaction(Button1)
+        Underline.backgroundColor = UIColor.redColor()
+        Titilescroll.addSubview(Underline)
         
     }
     
@@ -61,7 +64,6 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         
         Titilescroll.backgroundColor = UIColor.blackColor()
         Titilescroll.frame = CGRectMake(0, (self.navigationBar.frame.height) + rect.height + 1,self.view.frame.width , 46)
-        all.frames = CGRectMake(0, (self.navigationBar.frame.height) + rect.height + 1, 0, 0)
         Titilescroll.contentSize = CGSizeMake(500 , 0)
         self.automaticallyAdjustsScrollViewInsets = false
         
@@ -132,22 +134,27 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         case 1:
             Clearviews()
             all.view = SetFrameForViewOfTitleview(all)
+            Underline.frame = CGRectMake(0, 44, 100, 2)
             self.view.addSubview(all.view)
         case 2 :
             Clearviews()
+            Underline.frame = CGRectMake(100, 44, 100, 2)
             school.view = SetFrameForViewOfTitleview(school)
             self.view.addSubview(school.view)
             
         case 3 :
             Clearviews()
+            Underline.frame = CGRectMake(200, 44, 100, 2)
             streetphoto.view = SetFrameForViewOfTitleview(streetphoto)
             self.view.addSubview(streetphoto.view)
         case 4 :
             Clearviews()
+            Underline.frame = CGRectMake(300, 44, 100, 2)
             graduate.view = SetFrameForViewOfTitleview(graduate)
             self.view.addSubview(graduate.view)
         case 5 :
             Clearviews()
+            Underline.frame = CGRectMake(400, 44, 100, 2)
             snow.view = SetFrameForViewOfTitleview(snow)
             self.view.addSubview(snow.view)
         default:

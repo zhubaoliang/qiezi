@@ -17,7 +17,7 @@ class All: UIViewController ,UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SetFrame(CGRectMake(0, 0, self.view.frame.width, 200) )
+        SetFrame(CGRectMake(0, 0, self.view.frame.width, self.view.frame.height / 4) )
         self.setArray([UIImage.init(named: "homepage_p3.jpg")!,UIImage.init(named: "homepage_p4.jpg")!,UIImage.init(named: "homepage_pic1.jpg")!,UIImage.init(named: "homepage_pic2.jpg")!])
         self.view.backgroundColor = UIColor.redColor()
         self.openTimer()
@@ -111,7 +111,7 @@ class All: UIViewController ,UIScrollViewDelegate{
             for(var i:Int = 0 ; i < totalNum ; i++)
             {
                 let img:UIImageView = UIImageView.init()
-                img.frame = CGRectMake(CGFloat( i) * CGRectGetWidth(scrollview.frame), 0, CGRectGetWidth(scrollview.frame), CGRectGetHeight(scrollview.frame))
+                img.frame = CGRectMake(CGFloat( i) * CGRectGetWidth(scrollview.frame), 0, CGRectGetWidth(scrollview.frame), self.view.frame.height / 4)
                 img.contentMode = UIViewContentMode.ScaleAspectFill
                 img.image = imagArray[i]
                 img.tag = i

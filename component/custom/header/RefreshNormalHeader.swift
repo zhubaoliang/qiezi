@@ -51,7 +51,7 @@ class RefreshNormalHeader: RefreshStateHeader {
         let arrowCenter = CGPointMake(arrowCenterX, arrowCenterY)
         
         // 箭头
-        arrowView.image = UIImage.init(named: "/Users/jake/Desktop/arrow@2x副本.png")
+        arrowView.image = UIImage.init(named: "arrow@2x副本.png")
         if arrowView.constraints.count == 0 {
             arrowView.size = arrowView.image!.size
             arrowView.center = arrowCenter
