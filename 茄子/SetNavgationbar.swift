@@ -6,7 +6,7 @@
 //  Copyright © 2016年 茄子. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 class SetNavgationbar{
     let Tool:UIToolbar = UIToolbar.init()
@@ -172,4 +172,4 @@ class SetNavgationbar{
         return willset.view
     }
     
-}
+}*/

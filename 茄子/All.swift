@@ -6,7 +6,7 @@
 //  Copyright © 2016年 茄子. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 class All: UIViewController ,UIScrollViewDelegate{
     let scrollview: UIScrollView = UIScrollView.init()
@@ -146,4 +146,4 @@ class All: UIViewController ,UIScrollViewDelegate{
         timer.fireDate = NSDate.distantPast()
     }
 
-}
+}*/

@@ -8,6 +8,11 @@
 
 import Foundation
 import UIKit
+import Alamofire
 class LoadDataFromNet {
     
+    func populatephoto()
+    {
+        
+    }
 }

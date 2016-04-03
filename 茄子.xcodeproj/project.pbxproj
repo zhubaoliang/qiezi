@@ -72,6 +72,7 @@
 		2398B0211CA543240015472C /* Httpresult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0201CA543240015472C /* Httpresult.swift */; };
 		2398B0231CA543620015472C /* JSONJoy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0221CA543620015472C /* JSONJoy.swift */; };
 		2398B0261CA54F510015472C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2398B0251CA54F510015472C /* RegisterVC.swift */; };
+		23A42A7A1CB0F25200793796 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A42A791CB0F25200793796 /* MJRefresh.framework */; };
 		23A801351CA68CC4001FE209 /* RegisterFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A801341CA68CC4001FE209 /* RegisterFunction.swift */; };
 		23AF9CB01CAD185A005C468A /* Imageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AF9CAF1CAD185A005C468A /* Imageview.swift */; };
 		23B6585F1CAD650300E04EF7 /* LoadDataFromNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B6585E1CAD650300E04EF7 /* LoadDataFromNet.swift */; };
@@ -188,7 +189,9 @@
 		2398B0221CA543620015472C /* JSONJoy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONJoy.swift; sourceTree = "<group>"; };
 		2398B0251CA54F510015472C /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		239B752F1CA9379B0031917A /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "Pods/../build/Debug-iphoneos/MJRefresh.framework"; sourceTree = "<group>"; };
+		23A42A791CB0F25200793796 /* MJRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MJRefresh.framework; path = "Pods/../build/Debug-iphoneos/MJRefresh.framework"; sourceTree = "<group>"; };
 		23A801341CA68CC4001FE209 /* RegisterFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFunction.swift; sourceTree = "<group>"; };
+		23A85E231CAE30DD0094D978 /* Pod-bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pod-bridge.h"; sourceTree = "<group>"; };
 		23AF9CAF1CAD185A005C468A /* Imageview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imageview.swift; sourceTree = "<group>"; };
 		23B6585E1CAD650300E04EF7 /* LoadDataFromNet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadDataFromNet.swift; sourceTree = "<group>"; };
 		23B658601CAD69EA00E04EF7 /* CleanCach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanCach.swift; sourceTree = "<group>"; };
@@ -218,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A42A7A1CB0F25200793796 /* MJRefresh.framework in Frameworks */,
 				230216C01CAA78E800937CEF /* SDWebImage.framework in Frameworks */,
 				230216BE1CAA78E200937CEF /* JGProgressHUD.framework in Frameworks */,
 				230216BC1CAA78DC00937CEF /* Kanna.framework in Frameworks */,
@@ -365,6 +369,7 @@
 		237E607D1C9C2CFB00EFD7D2 = {
 			isa = PBXGroup;
 			children = (
+				23A85E221CAE30B80094D978 /* Bridge */,
 				237E60881C9C2CFB00EFD7D2 /* 茄子 */,
 				237E609D1C9C2CFB00EFD7D2 /* 茄子Tests */,
 				237E60A81C9C2CFC00EFD7D2 /* 茄子UITests */,
@@ -491,6 +496,14 @@
 			name = Resgister;
 			sourceTree = "<group>";
 		};
+		23A85E221CAE30B80094D978 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				23A85E231CAE30DD0094D978 /* Pod-bridge.h */,
+			);
+			name = Bridge;
+			sourceTree = "<group>";
+		};
 		23B89B371C9E86C20002635B /* MainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -582,6 +595,7 @@
 		61F2985D5015E1582436EABC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23A42A791CB0F25200793796 /* MJRefresh.framework */,
 				230216BF1CAA78E800937CEF /* SDWebImage.framework */,
 				230216BD1CAA78E200937CEF /* JGProgressHUD.framework */,
 				230216BB1CAA78DC00937CEF /* Kanna.framework */,

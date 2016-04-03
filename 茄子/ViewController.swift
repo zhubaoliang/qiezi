@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         self.view.addSubview(TabView.view)
         
         
+        
+    
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {

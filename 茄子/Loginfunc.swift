@@ -12,6 +12,7 @@ import Alamofire
 class Loginfunc {
     func ResiterVerifyNumberLength(Targetview:UIViewController,Username:UITextField)
     {
+        
         if(Username.text?.characters.count != 11)
         {
             
