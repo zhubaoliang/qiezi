@@ -46,7 +46,7 @@ class RefreshAutoStateFooter: RefreshAutoFooter {
         
         // 监听label
         stateLabel.userInteractionEnabled = true
-        stateLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "stateLabelClick"))
+        stateLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(RefreshAutoStateFooter.stateLabelClick)))
     }
     
     override func placeSubviews() {

@@ -24,7 +24,6 @@
 		230216501CAA43AF00937CEF /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 2302163F1CAA43AF00937CEF /* search.png */; };
 		230216511CAA43AF00937CEF /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 230216401CAA43AF00937CEF /* user.png */; };
 		230216521CAA43AF00937CEF /* user1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 230216411CAA43AF00937CEF /* user1.jpg */; };
-		230216BC1CAA78DC00937CEF /* Kanna.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230216BB1CAA78DC00937CEF /* Kanna.framework */; };
 		230216BE1CAA78E200937CEF /* JGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230216BD1CAA78E200937CEF /* JGProgressHUD.framework */; };
 		230216C01CAA78E800937CEF /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230216BF1CAA78E800937CEF /* SDWebImage.framework */; };
 		236C99561CAAACC000039501 /* RefreshAutoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236C99511CAAACC000039501 /* RefreshAutoFooter.swift */; };
@@ -224,7 +223,6 @@
 				23A42A7A1CB0F25200793796 /* MJRefresh.framework in Frameworks */,
 				230216C01CAA78E800937CEF /* SDWebImage.framework in Frameworks */,
 				230216BE1CAA78E200937CEF /* JGProgressHUD.framework in Frameworks */,
-				230216BC1CAA78DC00937CEF /* Kanna.framework in Frameworks */,
 				23F7594A1CA6B01400158FDD /* MBProgressHUD.framework in Frameworks */,
 				23CD8BAC1C9FA0F80024450E /* Alamofire.framework in Frameworks */,
 				9BA24789B0D1AADE7B57CC59 /* Pods.framework in Frameworks */,

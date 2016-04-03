@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     let Dra:Draw = Draw.init()
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("Hiddenbar"), name: "hidden", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("ShowBar"), name: "Show", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("push:"), name: "push", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.Hiddenbar), name: "hidden", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.ShowBar), name: "Show", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.push(_:)), name: "push", object: nil)
        self.view.backgroundColor = UIColor.whiteColor()
         self.view.addSubview(Dra.view)
         self.view.addSubview(TabView.view)

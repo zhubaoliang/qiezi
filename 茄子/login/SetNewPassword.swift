@@ -61,7 +61,7 @@ class SetNewPassword: UIViewController {
         FinishBTN.setTitle("完成", forState: UIControlState.Normal)
         FinishBTN.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         FinishBTN.layer.cornerRadius = 10
-        FinishBTN.addTarget(self, action: Selector("PopToRoot"), forControlEvents: UIControlEvents.TouchUpInside)
+        FinishBTN.addTarget(self, action: #selector(SetNewPassword.PopToRoot), forControlEvents: UIControlEvents.TouchUpInside)
         FinishBTN.showsTouchWhenHighlighted = true
         self.view.addSubview(FinishBTN)
     }
@@ -73,7 +73,7 @@ class SetNewPassword: UIViewController {
     
     func GestureForExitKeyBoard()
     {
-        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: Selector("ExitkeyBoard:"))
+        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(SetNewPassword.ExitkeyBoard(_:)))
         ExitKeyBoard.cancelsTouchesInView = false
         self.view.addGestureRecognizer(ExitKeyBoard)
     }

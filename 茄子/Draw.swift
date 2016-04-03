@@ -32,13 +32,13 @@ class Draw: UIViewController {
         home.setTitle("首页", forState: UIControlState.Normal)
         home.backgroundColor = UIColor(colorLiteralRed: 0.2, green: 0.8, blue: 1, alpha: 1)
         home.tag = 1
-        home.addTarget(self, action: Selector("ButtonActions:"), forControlEvents: UIControlEvents.TouchUpInside)
+        home.addTarget(self, action: #selector(Draw.ButtonActions(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(home)
         set.frame = CGRectMake(self.view.frame.width / 6, self.view.frame.height * 4 / 9, self.view.frame.width / 2, self.view.frame.width / 9)
         set.setTitle("设置", forState: UIControlState.Normal)
         set.backgroundColor = UIColor(colorLiteralRed: 0.2, green: 0.8, blue: 1, alpha: 1)
         set.tag = 2
-        set.addTarget(self, action: Selector("ButtonActions:"), forControlEvents: UIControlEvents.TouchDown)
+        set.addTarget(self, action: #selector(Draw.ButtonActions(_:)), forControlEvents: UIControlEvents.TouchDown)
         self.view.addSubview(set)
         about.frame = CGRectMake(self.view.frame.width / 6, self.view.frame.height * 5 / 9, self.view.frame.width / 2, self.view.frame.width / 9)
         about.setTitle("关于", forState: UIControlState.Normal)
@@ -59,7 +59,7 @@ class Draw: UIViewController {
         nologin.setTitle("退出登录", forState: UIControlState.Normal)
         nologin.backgroundColor = UIColor(colorLiteralRed: 0.2, green: 0.8, blue: 1, alpha: 1)
         nologin.tag = 6
-        nologin.addTarget(self, action: Selector("ButtonActions:"), forControlEvents: UIControlEvents.TouchDown)
+        nologin.addTarget(self, action: #selector(Draw.ButtonActions(_:)), forControlEvents: UIControlEvents.TouchDown)
         self.view.addSubview(nologin)
     }
     

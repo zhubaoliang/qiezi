@@ -29,8 +29,8 @@ class login: UIViewController {
     
     
     
-    override func viewWillAppear(var animated: Bool) {
-        animated = false
+    override func viewWillAppear( animated: Bool) {
+       
         self.title = "登录"
         self.navigationController?.navigationBarHidden = false
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
@@ -86,21 +86,21 @@ class login: UIViewController {
         LoginButton.setTitle("登录", forState: UIControlState.Normal)
         LoginButton.layer.cornerRadius = 10
         LoginButton.showsTouchWhenHighlighted = true
-        LoginButton.addTarget(self, action: Selector("UserVerify"), forControlEvents: UIControlEvents.TouchUpInside)
+        LoginButton.addTarget(self, action: #selector(login.UserVerify), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(LoginButton)
         CancelButton.frame = CGRectMake(self.view.frame.width / 2 + 5 , self.view.frame.height * 3 / 9 + 130 + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width * 9 / 28, 40)
         CancelButton.backgroundColor = UIColor.orangeColor()
         CancelButton.setTitle("注册", forState: UIControlState.Normal)
         CancelButton.layer.cornerRadius = 10
         CancelButton.showsTouchWhenHighlighted = true
-        CancelButton.addTarget(self, action: Selector("PushToRegisterVC"), forControlEvents: UIControlEvents.TouchUpInside)
+        CancelButton.addTarget(self, action: #selector(login.PushToRegisterVC), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(CancelButton)
         ForgetPassWord.frame = CGRectMake(self.view.frame.width / 2 + 5, self.view.frame.height * 3 / 9  + 190 + (self.navigationController?.navigationBar.frame.height)!, self.view.frame.width * 9 / 28, 20)
         ForgetPassWord.setTitle("忘记密码", forState: UIControlState.Normal)
         ForgetPassWord.backgroundColor = UIColor.grayColor()
         ForgetPassWord.setTitleColor(UIColor.blueColor(), forState: UIControlState.Normal)
         ForgetPassWord.showsTouchWhenHighlighted = true
-        ForgetPassWord.addTarget(self, action: Selector("ForGetView"), forControlEvents: UIControlEvents.TouchUpInside)
+        ForgetPassWord.addTarget(self, action: #selector(login.ForGetView), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(ForgetPassWord)
     }
     
@@ -120,7 +120,7 @@ class login: UIViewController {
     
     func GestureForExitKeyBoard()
     {
-        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: Selector("ExitkeyBoard:"))
+        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(login.ExitkeyBoard(_:)))
         ExitKeyBoard.cancelsTouchesInView = false
         self.view.addGestureRecognizer(ExitKeyBoard)
     }

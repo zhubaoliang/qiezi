@@ -8,7 +8,6 @@ pod 'MBProgressHUD'
 pod 'MJRefresh'
 pod 'SDWebImage'
 pod 'JGProgressHUD'
-pod 'Kanna'
 use_frameworks!
 target '茄子' do
 

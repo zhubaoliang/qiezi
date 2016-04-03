@@ -35,9 +35,9 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         
     }
     
-    override func viewWillAppear(var animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true
-        animated = true
+        
     }
     func Buildbar()
     {
@@ -96,31 +96,31 @@ class Home1: UINavigationController,UIScrollViewDelegate {
         
         Button1.backgroundColor = UIColor.blackColor()
         Button1.setTitle("全部", forState: UIControlState.Normal)
-        Button1.addTarget(self, action: Selector("Buttonaction:"), forControlEvents: UIControlEvents.TouchDown)
+        Button1.addTarget(self, action: #selector(Home1.Buttonaction(_:)), forControlEvents: UIControlEvents.TouchDown)
         Button1.tag = 1
         self.Titilescroll.addSubview(Button1)
         let Button2: UIButton = UIButton.init(frame: CGRectMake(100, 0, 100, 46))
         Button2.backgroundColor = UIColor.blackColor()
         Button2.setTitle("校园", forState: UIControlState.Normal)
-        Button2.addTarget(self, action: Selector("Buttonaction:"), forControlEvents: UIControlEvents.TouchDown)
+        Button2.addTarget(self, action: #selector(Home1.Buttonaction(_:)), forControlEvents: UIControlEvents.TouchDown)
         Button2.tag = 2
         self.Titilescroll.addSubview(Button2)
         let Button3: UIButton = UIButton.init(frame: CGRectMake(200, 0, 100, 46))
         Button3.backgroundColor = UIColor.blackColor()
-        Button3.addTarget(self, action: Selector("Buttonaction:"), forControlEvents: UIControlEvents.TouchDown)
+        Button3.addTarget(self, action: #selector(Home1.Buttonaction(_:)), forControlEvents: UIControlEvents.TouchDown)
         Button3.tag = 3
         Button3.setTitle("街拍", forState: UIControlState.Normal)
         self.Titilescroll.addSubview(Button3)
         let Button4: UIButton = UIButton.init(frame: CGRectMake(300, 0, 100, 46))
         Button4.backgroundColor = UIColor.blackColor()
         Button4.setTitle("唯美毕业季", forState: UIControlState.Normal)
-        Button4.addTarget(self, action: Selector("Buttonaction:"), forControlEvents: UIControlEvents.TouchDown)
+        Button4.addTarget(self, action: #selector(Home1.Buttonaction(_:)), forControlEvents: UIControlEvents.TouchDown)
         Button4.tag = 4
         self.Titilescroll.addSubview(Button4)
         let Button5: UIButton = UIButton.init(frame: CGRectMake(400, 0, 100, 46))
         Button5.backgroundColor = UIColor.blackColor()
         Button5.setTitle("雪景", forState: UIControlState.Normal)
-        Button5.addTarget(self, action: Selector("Buttonaction:"), forControlEvents: UIControlEvents.TouchDown)
+        Button5.addTarget(self, action: #selector(Home1.Buttonaction(_:)), forControlEvents: UIControlEvents.TouchDown)
         Button5.tag = 5
         self.Titilescroll.addSubview(Button5)
         self.view.addSubview(Titilescroll)

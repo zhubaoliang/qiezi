@@ -131,7 +131,7 @@ extension UITableView {
         }
         
         dispatch_once(&Static.token) {
-            self.exchangeInstanceMethod1("reloadData", method2: "refresherReloadData")
+            self.exchangeInstanceMethod1(#selector(UITableView.reloadData), method2: #selector(UITableView.refresherReloadData))
         }
     }
     
@@ -153,7 +153,7 @@ extension UICollectionView {
         }
         
         dispatch_once(&Static.token) {
-            self.exchangeInstanceMethod1("reloadData", method2: "refresherReloadData")
+            self.exchangeInstanceMethod1(#selector(UITableView.reloadData), method2: #selector(UITableView.refresherReloadData))
         }
     }
     

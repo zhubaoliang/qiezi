@@ -18,7 +18,7 @@ class School: UIViewController {
         let btn:UIButton = UIButton.init()
         btn.frame = CGRectMake(0, 0, 300, 40)
         btn.backgroundColor = UIColor.redColor()
-        btn.addTarget(self, action: Selector("test"), forControlEvents: UIControlEvents.TouchDown)
+        btn.addTarget(self, action: #selector(School.test), forControlEvents: UIControlEvents.TouchDown)
         self.view.addSubview(btn)
         
         

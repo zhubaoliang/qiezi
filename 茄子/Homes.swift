@@ -195,7 +195,7 @@ class Homes: UIViewController,UICollectionViewDataSource,UICollectionViewDelegat
         imageNum.textAlignment = NSTextAlignment.Right
         containerview.addSubview(imageNum)
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: Selector("timerAction:"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(4, target: self, selector: #selector(Homes.timerAction(_:)), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timer, forMode: NSDefaultRunLoopMode)
         timer.fireDate = NSDate.distantFuture()
         
@@ -254,7 +254,7 @@ class Homes: UIViewController,UICollectionViewDataSource,UICollectionViewDelegat
         let depend:Bool = totalNum > 0
         if(depend)
         {
-            for(var i:Int = 0 ; i < totalNum ; i++)
+            for(var i:Int = 0 ; i < totalNum ; i += 1)
             {
                 let img:UIImageView = UIImageView.init()
                 img.frame = CGRectMake(CGFloat( i) * CGRectGetWidth(scrollview.frame), 0, CGRectGetWidth(scrollview.frame), self.view.frame.height / 4)

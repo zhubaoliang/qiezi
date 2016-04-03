@@ -22,8 +22,8 @@ class ForgetPassWordView: UIViewController {
         NextStepFunction()
     }
     
-    override func viewWillAppear(var animated: Bool) {
-        animated = false
+    override func viewWillAppear( animated: Bool) {
+        
         self.title = "忘记密码"
         self.navigationController!.navigationBar.tintColor = UIColor.whiteColor()
         let attribute: NSDictionary  = NSDictionary(object: UIColor.whiteColor(), forKey: NSForegroundColorAttributeName )
@@ -61,7 +61,7 @@ class ForgetPassWordView: UIViewController {
         NextStep.layer.cornerRadius = 10
         NextStep.setTitle("下一步", forState: UIControlState.Normal)
         NextStep.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        NextStep.addTarget(self, action: Selector("PushToSetNewPassword"), forControlEvents: UIControlEvents.TouchUpInside)
+        NextStep.addTarget(self, action: #selector(ForgetPassWordView.PushToSetNewPassword), forControlEvents: UIControlEvents.TouchUpInside)
         NextStep.showsTouchWhenHighlighted = true
         self.view.addSubview(NextStep)
     }
@@ -73,7 +73,7 @@ class ForgetPassWordView: UIViewController {
     }
     func GestureForExitKeyBoard()
     {
-        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: Selector("ExitkeyBoard:"))
+        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(ForgetPassWordView.ExitkeyBoard(_:)))
         ExitKeyBoard.cancelsTouchesInView = false
         self.view.addGestureRecognizer(ExitKeyBoard)
     }

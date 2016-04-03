@@ -98,7 +98,7 @@ class RegisterVC: UIViewController {
         VerifyNum.backgroundColor =  UIColor.whiteColor()
         VerifyNum.frame = CGRectMake(self.view.frame.width * 3 / 4, 165, self.view.frame.width / 4, 35)
         VerifyNum.setTitle("获取验证码", forState: UIControlState.Normal)
-        VerifyNum.addTarget(self, action: Selector("senderMessage"), forControlEvents: UIControlEvents.TouchUpInside)
+        VerifyNum.addTarget(self, action: #selector(RegisterVC.senderMessage), forControlEvents: UIControlEvents.TouchUpInside)
         VerifyNum.showsTouchWhenHighlighted  = true
         VerifyNum.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         self.view.addSubview(VerifyNum)
@@ -108,7 +108,7 @@ class RegisterVC: UIViewController {
         NextStep.layer.cornerRadius  = 10
         NextStep.setTitle("下一步", forState: UIControlState.Normal)
         NextStep.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-        NextStep.addTarget(self, action: Selector("NextStepFunction"), forControlEvents: UIControlEvents.TouchUpInside)
+        NextStep.addTarget(self, action: #selector(RegisterVC.NextStepFunction), forControlEvents: UIControlEvents.TouchUpInside)
         NextStep.showsTouchWhenHighlighted = true
         self.view.addSubview(NextStep)
         
@@ -128,7 +128,7 @@ class RegisterVC: UIViewController {
     
     func GestureForExitKeyBoard()
     {
-        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: Selector("ExitkeyBoard:"))
+        let ExitKeyBoard:UIGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(RegisterVC.ExitkeyBoard(_:)))
         ExitKeyBoard.cancelsTouchesInView = false
         self.view.addGestureRecognizer(ExitKeyBoard)
     }

@@ -86,7 +86,6 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-茄子UITests/Alamofire.framework"
   install_framework "Pods-茄子UITests/JGProgressHUD.framework"
-  install_framework "Pods-茄子UITests/Kanna.framework"
   install_framework "Pods-茄子UITests/MBProgressHUD.framework"
   install_framework "Pods-茄子UITests/MJRefresh.framework"
   install_framework "Pods-茄子UITests/SDWebImage.framework"
@@ -94,7 +93,6 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-茄子UITests/Alamofire.framework"
   install_framework "Pods-茄子UITests/JGProgressHUD.framework"
-  install_framework "Pods-茄子UITests/Kanna.framework"
   install_framework "Pods-茄子UITests/MBProgressHUD.framework"
   install_framework "Pods-茄子UITests/MJRefresh.framework"
   install_framework "Pods-茄子UITests/SDWebImage.framework"

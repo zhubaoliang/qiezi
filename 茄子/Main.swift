@@ -15,7 +15,7 @@ class Main: UITabBarController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         CreatTabItems()
-        Pangesture.addTarget(self, action: ("PangG:"))
+        Pangesture.addTarget(self, action: (#selector(Main.PangG(_:))))
         self.view.addGestureRecognizer(Pangesture)
         SetTabBar()
        
